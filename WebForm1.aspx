@@ -28,7 +28,7 @@
     <br />
     
 
-    <asp:Button ID="Button1" class="btn btn-primary"  runat="server" Text ="Submit" onClick =" Button1_Click"/>
+    <asp:Button ID="Button1" class="btn btn-primary"  runat="server" Text ="Submit" onClick =" Button1_Click" Width="242px"/>
     
      <br />
      <br />

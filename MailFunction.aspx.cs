@@ -30,7 +30,7 @@ namespace WebForms
 
             SmtpClient client = new SmtpClient("smtp.gmail.com");
             client.Port = 587;
-            client.Credentials = new NetworkCredential("sharanyanemade123@gmail.com", "");
+            client.Credentials = new NetworkCredential("sharanyanemade123@gmail.com", "yril gykf ijev ppkp");
             client.EnableSsl = true;
             client.Send(mail);
         }

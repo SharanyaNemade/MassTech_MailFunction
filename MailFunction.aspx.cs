@@ -13,6 +13,13 @@ namespace WebForms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
+
+        
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
             string to = TextBox1.Text;
             string msg = TextBox2.Text;
             MailMessage mail = new MailMessage();
@@ -20,17 +27,12 @@ namespace WebForms
             mail.To.Add(to);
             mail.Subject = "Test";
             mail.Body = msg;
-        }
 
-        SmtpClient client = new SmtpClient("smtp.gmail.com");
-        client.Port = 587;
-        client.Credentials = new NetworkCredential("sharanyanemade123@gmail.com","");
-        client.EnableSsl = true;
-        client.Send(mail);
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
+            SmtpClient client = new SmtpClient("smtp.gmail.com");
+            client.Port = 587;
+            client.Credentials = new NetworkCredential("sharanyanemade123@gmail.com", "");
+            client.EnableSsl = true;
+            client.Send(mail);
         }
     }
 }
